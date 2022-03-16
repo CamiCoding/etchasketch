@@ -12,12 +12,18 @@
             <h1>Etch-a-Sketch</h1>
         </div>
         <div class="btns">
-            <button id="black">Black</button>
-            <button id="reset">Reset</button>
-            <button id="eraser">Eraser</button>
+            <button id="blackBtn">Black</button>
+            <button id="rainbowBtn">Rainbow</button>
+            <button id="colorBtn">Color</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="resetBtn">Reset</button>
             <div class="colorPicker">
                 <input type="color" id="color" value="#000000">
                 <span>Pick a color</span>
+            </div>
+            <div class="sliderAndValue">
+                <input type="range" min="2" max="100" value="16" id="slider">
+                <p class="value">16</p>
             </div>
         </div>
         <div class="grid">
