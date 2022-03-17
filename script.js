@@ -36,8 +36,8 @@ function createGrid() {
 	removeCells(grid);
 	let val = document.getElementById('slider').value;
 	sliderValue.textContent = val;
-	grid.style.gridTemplateColumns = (`repeat(${val}, 2fr`);
-	grid.style.gridTemplateRows = (`repeat(${val}, 2fr`);
+	grid.style.gridTemplateColumns = (`repeat(${val}, 1fr`);
+	grid.style.gridTemplateRows = (`repeat(${val}, 1fr`);
 	for(let i = 0; i < val * val; i++) {
 		const cell = document.createElement('div');
 		cell.classList.add('cell');

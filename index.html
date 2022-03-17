@@ -6,27 +6,38 @@
         <title>Etch-a-Sketch</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://kit.fontawesome.com/77133b1b16.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="title">
-            <h1>Etch-a-Sketch</h1>
-        </div>
-        <div class="btns">
-            <button id="blackBtn">Black</button>
-            <button id="rainbowBtn">Rainbow</button>
-            <button id="colorBtn">Color</button>
-            <button id="eraserBtn">Eraser</button>
-            <button id="resetBtn">Reset</button>
-            <div class="colorPicker">
-                <input type="color" id="color" value="#000000">
-                <span>Pick a color</span>
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    <h1>Etch-a-Sketch</h1>
+                </div>
+                <div class="btns">
+                    <button id="blackBtn">Black</button>
+                    <button id="rainbowBtn">Rainbow</button>
+                    <button id="colorBtn">Color</button>
+                    <button id="eraserBtn">Eraser</button>
+                    <button id="resetBtn">Reset</button>
+                    <div class="colorPicker">
+                        <input type="color" id="color" value="#000000">
+                        <span>Pick a color</span>
+                    </div>
+                    <div class="sliderAndValue">
+                        <input type="range" min="2" max="100" value="16" id="slider">
+                        <p class="value">16</p>
+                    </div>
+                </div>
             </div>
-            <div class="sliderAndValue">
-                <input type="range" min="2" max="100" value="16" id="slider">
-                <p class="value">16</p>
+            <div class="grid-container">
+                <div class="grid">
+                </div>
             </div>
         </div>
-        <div class="grid">
+        <div class="footer">
+            <p>Copyright © CamiCoding 2022</p>
+            <a href="https://www.github.com/CamiCoding/" target=”_blank”><i class="fa-brands fa-github fa-beat" style="--fa-beat-scale: 2.0;"></i></a>
         </div>
         <script src="script.js" defer></script>
     </body>
