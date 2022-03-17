@@ -14,8 +14,8 @@ let currentColor = DEFAULT_COLOR;
 let currentMode = DEFAULT_MODE;
 let mouseDown = false
 
-document.body.onmousedown = () => (mouseDown = true)
-document.body.onmouseup = () => (mouseDown = false)
+document.body.addEventListener("mousedown", () => (mouseDown = true))
+document.body.addEventListener("mouseup", () => (mouseDown = false))
 
 function setCurrentColor(newColor) {
 	currentColor = newColor;
@@ -85,19 +85,9 @@ function changeColor(e) {
 	}
 }
 
-slider.addEventListener('input', function(){
-	let val = document.getElementById('slider').value;
-	sliderValue.textContent = val;
-	removeCells(grid);
-	grid.style.gridTemplateColumns = (`repeat(${val}, 2fr`);
-	grid.style.gridTemplateRows = (`repeat(${val}, 2fr`);
-	for (let i = 0; i < val * val; i++) {
-		const cell = document.createElement('div');
-		cell.classList.add('cell');
-		cell.addEventListener('mouseover', changeColor);
-		cell.addEventListener('mousedown', changeColor);
-		grid.appendChild(cell);
-	}
+slider.addEventListener('input', function(e) {
+  let val = parseInt(document.getElementById('slider').value);
+  createGrid(val);
 });
 
 function removeCells(parent){
