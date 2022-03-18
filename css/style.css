@@ -142,6 +142,7 @@ body {
   width: 900px;
   grid-gap: 1px;
   background-color: white;
+  user-select: none;
 }
 
 .footer {
