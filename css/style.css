@@ -12,11 +12,9 @@ body {
   background-color: #B3D6FF;
 }
 
-
-
 .header {
   border-radius: 20px 20px 0 0;
-  width: 1300px;
+  width: 1500px;
   height: 175px;
   display: flex;
   flex-direction: column;
@@ -24,24 +22,16 @@ body {
   background-color: #FF5955;
 }
 
-.grid-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #FF5955;
-  width: 1300px;
-  border-radius: 0 0 20px 20px;
-  padding-bottom: 40px;
-}
-
-.footer {
-  border-radius: 0 0 20px 20px;
-}
-
 .title h1 {
   font-size: 90px;
   margin: 0px;
   color: #F6FF96;
+}
+
+.title p {
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
 }
 
 .btns {
@@ -132,17 +122,29 @@ body {
   background-color: black;
 }
 
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF5955;
+  width: 1500px;
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 40px;
+}
+
 .grid {
   display: inline-grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
   border: 5px solid gray;
   border-radius: 16px;
-  height: 650px;
-  width: 900px;
+  height: 630px;
+  width: 1100px;
   grid-gap: 1px;
   background-color: white;
   user-select: none;
+  margin-top: 35px;
 }
 
 .footer {
@@ -152,6 +154,7 @@ body {
   justify-content: center;
   width: 100%;
   font-size: 24px;
+  border-radius: 0 0 20px 20px;
 }
 
 .footer p {
