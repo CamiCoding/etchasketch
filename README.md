@@ -1,1 +1,1 @@
-Live site: https://wasivis.github.io/etchasketch/
+Etch A Sketch made with HTML, CSS and JavaScript.
